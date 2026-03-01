@@ -112,6 +112,17 @@ h1 .accent { color: var(--purple-light); }
 .stat-num { font-size: 2rem; font-weight: 800; color: var(--purple-light); line-height: 1; }
 .stat-label { font-size: 0.75rem; color: var(--text-dim); margin-top: 0.25rem; }
 
+/* Styles pour les liens */
+a {
+  color: inherit; /* Hérite de la couleur du texte environnant */
+  text-decoration: none; /* Retire le soulignement */
+}
+
+/* Optionnel : Applique un effet de survol sur les liens */
+a:hover {
+  color: var(--purple-light); /* Change la couleur lorsque le lien est survolé */
+  text-decoration: underline; /* Ajoute un soulignement lors du survol (facultatif) */
+}
 /* ─── TERMINAL ─── */
 .terminal {
   background: #0d0d18;
@@ -752,14 +763,70 @@ Ouvert aux entreprises de toutes tailles.</div>
     <div class="sec-label">Certifications</div>
     <div class="sec-title">Ce que j'ai validé.</div>
     <div class="certs-grid">
-      <div class="cert-card"><div class="cert-org">Cisco</div><div class="cert-name">Introduction to Cybersecurity</div><div class="cert-yr">2024</div></div>
-      <div class="cert-card"><div class="cert-org">LVMH</div><div class="cert-name">INSIDE LVMH Certificate</div><div class="cert-yr">2025</div></div>
-      <div class="cert-card"><div class="cert-org">Sololearn</div><div class="cert-name">SQL Intermediate</div><div class="cert-yr">2025</div></div>
-      <div class="cert-card"><div class="cert-org">Sololearn</div><div class="cert-name">Java Intermediate</div><div class="cert-yr">2025</div></div>
-      <div class="cert-card"><div class="cert-org">Binance Academy</div><div class="cert-name">AWS NodeRunners for BNB Chain</div><div class="cert-yr">2025</div></div>
-      <div class="cert-card"><div class="cert-org">Binance Academy</div><div class="cert-name">Blockchain Deep Dive</div><div class="cert-yr">2025</div></div>
-      <div class="cert-card"><div class="cert-org">Binance Academy</div><div class="cert-name">DeFi Deep Dive</div><div class="cert-yr">2025</div></div>
-      <div class="cert-card ongoing"><div class="cert-org">Columbia University · En cours</div><div class="cert-name">Learning AI Through Visualization 3</div><div class="cert-yr">2025 — ...</div></div>
+
+      <!-- Certification 1 -->
+      <a href="https://www.credly.com/badges/f31c2e03-379f-48af-9f18-630a1d978e62" target="_blank" class="cert-card">
+        <div class="cert-org">Cisco</div>
+        <div class="cert-name">Introduction to Cybersecurity</div>
+        <div class="cert-yr">2025</div>
+      </a>
+
+      <!-- Certification 2 -->
+      <a href="https://www.linkedin.com/in/rayane-ait-braham-235874317/overlay/Certifications/38954445/treasury/?profileId=ACoAAFBlY0kBhMFhPlDnoHuKV18m34u6Cfn00PM" target="_blank" class="cert-card">
+        <div class="cert-org">LVMH</div>
+        <div class="cert-name">INSIDE LVMH Certificate</div>
+        <div class="cert-yr">2025</div>
+      </a>
+
+      <!-- Certification 3 -->
+      <a href="https://api2.sololearn.com/v2/certificates/CC-JKBLZUGX/image/jpg?t=638900300146933620" target="_blank" class="cert-card">
+        <div class="cert-org">Sololearn</div>
+        <div class="cert-name">SQL Intermediate</div>
+        <div class="cert-yr">2025</div>
+      </a>
+
+      <!-- Certification 4 -->
+      <a href="https://www.sololearn.com/certificates/CC-VMBVDBY9" target="_blank" class="cert-card">
+        <div class="cert-org">Sololearn</div>
+        <div class="cert-name">Java Intermediate</div>
+        <div class="cert-yr">2025</div>
+      </a>
+
+      <!-- Certification 5 -->
+      <a href="https://academy.binance.com/en/courses/certificate/c527d501b26fdce3f2c789d5befee866fe86f1572c50e464fee1c1ca38b25be2" target="_blank" class="cert-card">
+        <div class="cert-org">Binance Academy</div>
+        <div class="cert-name">AWS NodeRunners for BNB Chain</div>
+        <div class="cert-yr">2025</div>
+      </a>
+
+      <!-- Certification 6 -->
+      <a href="https://academy.binance.com/en/courses/certificate/1f0008789f08793eb71b929db6c4614a51aee0269283f1903eb63ed13813ec74" target="_blank" class="cert-card">
+        <div class="cert-org">Binance Academy</div>
+        <div class="cert-name">Blockchain Deep Dive</div>
+        <div class="cert-yr">2025</div>
+      </a>
+
+      <!-- Certification 7 -->
+      <a href="https://academy.binance.com/en/courses/certificate/a11cadbd00d10c908e3cc41fab4201563d62207a55cfa47625955193325cd8be" target="_blank" class="cert-card">
+        <div class="cert-org">Binance Academy</div>
+        <div class="cert-name">DeFi Deep Dive</div>
+        <div class="cert-yr">2025</div>
+      </a>
+
+<!-- Certification EF SET -->
+<a href="https://cert.efset.org/fr/Kf8P47" target="_blank" class="cert-card">
+  <div class="cert-org">EF SET</div>
+  <div class="cert-name">Certificat Anglais 75/100 (C2 Maîtrise)</div>
+  <div class="cert-yr">2025</div>
+</a>
+
+      <!-- Certification en cours -->
+      <div class="cert-card ongoing">
+        <div class="cert-org">Columbia University · En cours</div>
+        <div class="cert-name">Learning AI Through Visualization 3</div>
+        <div class="cert-yr">2025 — ...</div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -800,7 +867,7 @@ Ouvert aux entreprises de toutes tailles.</div>
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
         github.com/rayaneweb
       </a>
-      <a href="https://linkedin.com/in/rayane-ait-braham" target="_blank" class="contact-link">
+      <a href="https://www.linkedin.com/in/rayane-ait-braham-235874317/" target="_blank" class="contact-link">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7H10v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         Rayane Ait Braham
       </a>
