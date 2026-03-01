@@ -134,7 +134,14 @@ h1 .accent { color: var(--purple-light); }
 .t-dot.y { background: #febc2e; }
 .t-dot.g { background: #28c840; }
 .t-filename { margin-left: auto; font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; color: #4a4a70; }
-.terminal-body { padding: 1.4rem 1.6rem; font-family: 'JetBrains Mono', monospace; font-size: 0.74rem; line-height: 2; }
+.terminal-body {
+  padding: 1.4rem 1.6rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.74rem;
+  line-height: 2;
+  word-wrap: break-word; /* Allow long text to wrap */
+  white-space: normal; /* Allow the text to break into multiple lines */
+}
 .t-kw  { color: #c792ea; }
 .t-fn  { color: #82aaff; }
 .t-self{ color: #f07178; }
@@ -397,7 +404,7 @@ footer {
           <span class="t-line t-i3"><span class="t-str">"Finance"</span>,</span>
           <span class="t-line t-i3"><span class="t-str">"Web3"</span>,</span>
           <span class="t-line t-i2">]</span>
-          <span class="t-line t-i2"><span class="t-self">self</span>.goal = <span class="t-str v">"Master Info / Stage avr.2026 / Alternance sept.2026"</span></span>
+          <span class="t-line t-i2"><span class="t-self">self</span>.goal = <span class="t-str v">"Master Info  <br>/ Stage avr.2026 /<br> Alternance sept.2026"</span></span>
           <span class="t-line">&nbsp;</span>
           <span class="t-line t-i1"><span class="t-kw">def</span> <span class="t-fn">hello</span>(<span class="t-self">self</span>):</span>
           <span class="t-line t-i2"><span class="t-kw">return</span> <span class="t-str">"Bienvenue !"</span></span>
@@ -426,7 +433,8 @@ footer {
       <div class="obj-card">
         <div class="obj-icon">🔄</div>
         <div class="obj-title">Alternance</div>
-        <div class="obj-desc">Alternance en <strong>Master Informatique</strong> à la rentrée 2026. Développement full-stack, IA/ML, cybersécurité ou Web3. Ouvert aux entreprises de toutes tailles.</div>
+        <div class="obj-desc">Alternance en <strong>Master Informatique</strong> à la rentrée 2026. Développement full-stack, Data & IA/ML, Cybersécurité ou Web3.
+Ouvert aux entreprises de toutes tailles.</div>
         <span class="obj-tag blue">Rentrée 2026</span>
       </div>
       <div class="obj-divider"></div>
